@@ -24,7 +24,5 @@ public class classMain21 {
         System.out.println("Data mahasiswa setelah sorting desc berdasarkan ipk");
         list.bubbleSort();
         list.tampil();
-
-        //apa hayoooo
     }
 }
