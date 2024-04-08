@@ -34,4 +34,19 @@ public class DaftarMahasiswaBerprestasi21 {
                 }
             }
         }
+
+        void selectionSort() {
+            for (int i = 0; i < listMHS.length-1; i++) {
+                int idxMin = i;
+                for (int j = i+1; j < listMHS.length; j++) {
+                    if (listMHS[j].ipk < listMHS[idxMin].ipk) {
+                        idxMin = j;
+                    }
+                }
+                //swap
+                Mahasiswa21 tmp = listMHS[idxMin];
+                listMHS[idxMin] = listMHS[i];
+                listMHS[i] = tmp;
+            }
+        }
     }
