@@ -54,7 +54,7 @@ public class DaftarMahasiswaBerprestasi21 {
             for (int i = 1; i < listMHS.length; i++) {
                 Mahasiswa21 temp = listMHS[i];
                 int j = i;
-                while (j > 0 && listMHS[j - 1].ipk > temp.ipk) {
+                while (j > 0 && listMHS[j - 1].ipk < temp.ipk) {
                     listMHS[j] = listMHS[j - 1];
                     j--;
                 }
